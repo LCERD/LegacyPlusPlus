@@ -9,7 +9,7 @@
 #include <qtabwidget.h>
 #include <QWidget>
 
-#include "Filesystem/File.h"
+#include "LCE/filesystem/File.h"
 #include "GUI/Widgets/FileListWidget.h"
 
 class QListWidget;

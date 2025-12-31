@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.26)
-project(LegacyPlusPlus VERSION 1.1.2 LANGUAGES CXX)
+project(LegacyPlusPlus VERSION 1.1.3 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 
@@ -32,13 +32,21 @@ else()
     include_directories(LegacyPlusPlus PRIVATE "lib/libLCE/include")
 endif()
 
+include(FetchContent)
+FetchContent_Declare(
+        BIO
+        GIT_REPOSITORY https://github.com/DexrnZacAttack/libBIO.git
+        GIT_TAG main
+)
+FetchContent_MakeAvailable(BIO)
+
 include_directories("src")
 
 qt_add_executable(LegacyPlusPlus
         ${LegacyPlusPlusSrc}
 )
 
-target_link_libraries(${PROJECT_NAME} PRIVATE LCE Qt6::Core Qt6::Gui Qt6::Widgets Qt6::Concurrent)
+target_link_libraries(${PROJECT_NAME} PRIVATE LCE BIO Qt6::Core Qt6::Gui Qt6::Widgets Qt6::Concurrent)
 
 if(APPLE)
     set_target_properties(LegacyPlusPlus PROPERTIES

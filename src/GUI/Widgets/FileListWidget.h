@@ -5,11 +5,11 @@
 #define LEGACYPLUSPLUS_FILELISTWIDGET_H
 #include <QTreeWidget>
 
-#include "Archive/Archive.h"
-#include "Filesystem/File.h"
+#include "LCE/archive/Archive.h"
+#include "LCE/filesystem/File.h"
 #include "IO/FileType.h"
-#include "Save/SaveFileOld.h"
-#include "Soundbank/Soundbank.h"
+#include "LCE/save/SaveFileOld.h"
+#include "LCE/soundbank/Soundbank.h"
 
 namespace LPP::GUI::Widgets {
     class FileListWidget : public QTreeWidget {

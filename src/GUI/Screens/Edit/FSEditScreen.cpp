@@ -12,8 +12,8 @@
 
 #include "LPP.h"
 #include "GUI/Dialogs/SimpleDialog.h"
-#include "Save/SaveFile.h"
-#include "IO/Serializable.h"
+#include "LCE/save/SaveFile.h"
+#include "LCE/io/Serializable.h"
 
 namespace LPP::GUI::Screens::Edit {
     // I feel like this should be gutted out and have it's main init code moved to EditScreen

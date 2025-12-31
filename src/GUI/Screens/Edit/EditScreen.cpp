@@ -17,7 +17,7 @@
 #include "LPP.h"
 #include "GUI/Toolbars/EditScreenMenuBar.h"
 #include "GUI/Widgets/FileListWidget.h"
-#include "Save/SaveFile.h"
+#include "LCE/save/SaveFile.h"
 
 namespace LPP::GUI::Screens::Edit {
     EditScreen::EditScreen(IO::FileType type, QWidget *parent) {

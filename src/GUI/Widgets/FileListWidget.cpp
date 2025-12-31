@@ -3,7 +3,7 @@
 //
 #include "FileListWidget.h"
 
-#include "Filesystem/Directory.h"
+#include "LCE/filesystem/Directory.h"
 #include <QMenu>
 #include <QAction>
 #include <QFileDialog>
