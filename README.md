@@ -2,7 +2,7 @@
 Legacy Console Edition file editor using libLCE
 
 > [!NOTE]
-> libLCE is currently being rewritten, LegacyPlusPlus will be continued after that is complete.
+> libLCE is currently being refactored, LegacyPlusPlus will be continued after that is complete.
 
 ## TODO
 - [ ] Create new files
