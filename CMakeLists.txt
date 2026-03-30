@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.26)
-project(LegacyPlusPlus VERSION 1.1.4 LANGUAGES CXX)
+project(LegacyPlusPlus VERSION 1.1.5 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 
@@ -23,7 +23,7 @@ if(NOT LOCAL_LIBLCE)
     FetchContent_Declare(
             LCE
             GIT_REPOSITORY https://codeberg.org/Dexrn/libLCE
-            GIT_TAG        "1.2.4-dev.3"
+            GIT_TAG        "1.2.5-dev.4"
     )
     FetchContent_MakeAvailable(LCE)
 else()
@@ -36,7 +36,7 @@ include(FetchContent)
 FetchContent_Declare(
         BIO
         GIT_REPOSITORY https://github.com/DexrnZacAttack/libBIO.git
-        GIT_TAG main
+        GIT_TAG 2.0.8
 )
 FetchContent_MakeAvailable(BIO)
 
