@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.26)
-project(LegacyPlusPlus VERSION 1.1.3 LANGUAGES CXX)
+project(LegacyPlusPlus VERSION 1.1.4 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 
@@ -22,8 +22,8 @@ message(STATUS "use local libLCE: ${LOCAL_LIBLCE}")
 if(NOT LOCAL_LIBLCE)
     FetchContent_Declare(
             LCE
-            GIT_REPOSITORY https://github.com/DexrnZacAttack/libLCE.git
-            GIT_TAG        main
+            GIT_REPOSITORY https://codeberg.org/Dexrn/libLCE
+            GIT_TAG        "1.2.4-dev.3"
     )
     FetchContent_MakeAvailable(LCE)
 else()
